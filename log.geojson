@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#008000",
+        "stroke-width": 8,
+        "stroke-opacity": "0.6",
+        "who": "Thorsten",
+        "when": "2024-01-09",
+        "text": "Mache heute Zechstraße 3-9"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            11.538887412070665,
+            48.10708174335241
+          ],
+          [
+            11.537934133529319,
+            48.10697306520848
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 0
+    }
+  ]
+}
