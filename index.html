@@ -14,7 +14,14 @@
     <script>
       function onEachFeature(feature, layer) {
         layer.bindPopup("<b>" + feature.properties.who + "</b> (" + feature.properties.when + "):<br />" + feature.properties.text);
-      }
+      };
+      function style(feature) {
+        return {
+          weight: 6,
+          opacity: .8,
+          color: '#000800'
+        };
+      };
 
       // Karte einbinden
       var map = L.map('map').setView([48.113, 11.535], 15);
@@ -23,7 +30,7 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
       var log = 'https://raw.githubusercontent.com/t-karcher/flyer-tracker/refs/heads/main/log.geojson';
-      fetch(log).then(res => res.json()).then(data => L.geoJSON(data, {onEachFeature: onEachFeature}).addTo(map));
+      fetch(log).then(res => res.json()).then(data => L.geoJSON(data, {onEachFeature: onEachFeature, style: style}).addTo(map));
     </script>
   </body>
 </html>
