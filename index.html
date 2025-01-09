@@ -4,10 +4,13 @@
     <link rel="stylesheet" href="./leaflet.css" />
     <script src="./leaflet.js"></script>
     <style>
+      body { background-color: '#46962b'; color: '#ffee00'; }
+      #logo { float: left; width: '60px'; }
       #map { height: 100%; }
     </style>
   </head>
   <body>
+    <div id="logo"><img src="./images/logo_small.png" width="60px" /></div>
     <h1>Flyer-Tracker</h1>
     <h2>Wann wurde wo von wem zuletzt geflyert?</h2>
     <div id="map"></div>
@@ -25,10 +28,13 @@
 
       // Karte einbinden
       var map = L.map('map').setView([48.113, 11.535], 15);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map);
+      var CartoDB_Voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+        maxZoom: 20
+      });
+      CartoDB_Voyager.addTo(map);
+
       var log = 'https://raw.githubusercontent.com/t-karcher/flyer-tracker/refs/heads/main/log.geojson';
       fetch(log).then(res => res.json()).then(data => L.geoJSON(data, {onEachFeature: onEachFeature, style: style}).addTo(map));
     </script>
