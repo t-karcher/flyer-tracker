@@ -4,7 +4,10 @@
 Link zur Webseite: https://gruenlink.de/zuy3byw7wg
 
 ## Neue Einträge hinzufügen
-Alle Einträge sind in der Datei `log.geojson` gespeichert. Diese Datei kann online mit GeoJSON.io bearbeitet werden:
+
+Am besten die neu geflyerten Straßen einfach in unsere Flyer-Gruppe bei Signal posten. Ich kümmere mich dann darum.
+
+Wenn du technisch interessiert bist und bei der Pflege mithelfen möchtest: Alle Einträge sind in der Datei `log.geojson` gespeichert. Diese Datei kann online mit GeoJSON.io bearbeitet werden:
 
 https://geojson.io/#id=github:t-karcher/flyer-tracker/blob/main/log.geojson&map=13.5/48.113/11.535
 
