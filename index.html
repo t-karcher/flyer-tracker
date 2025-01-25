@@ -29,7 +29,9 @@
         layer.bindPopup("<b>" + feature.properties.who + "</b> (" + feature.properties.when + "):<br />" + feature.properties.text);
       };
       function style(feature) {
-        return {
+        var line_color = '#008000';
+	if (feature.properties.who == 'HTWK') {line_color = '581845'};
+	return {
           weight: 8,
           opacity: .8,
           color: '#008000'
