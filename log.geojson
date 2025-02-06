@@ -5,6 +5,59 @@
       "type": "Feature",
       "properties": {
         "who": "Philipp",
+        "when": "2025-02-06",
+        "text": "Uttingerstr, Schondorferstr, Holzhausenerstr,<br />Inningerstr, Südparkallee, Breitbrunnerstraße<br />Trautweinstraße, Kederbacherstr, Höllentalstr<br />Cimbernstr von Höllentalstr - Innerkoflerstr"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            11.509684477598514,
+            48.107769197941785
+          ],
+          [
+            11.509256106760436,
+            48.108372930823364
+          ],
+          [
+            11.50896187657711,
+            48.10950643174193
+          ],
+          [
+            11.508667239510473,
+            48.11192044970669
+          ],
+          [
+            11.512705174955148,
+            48.11247620357763
+          ],
+          [
+            11.515630578751304,
+            48.112559180294426
+          ],
+          [
+            11.515673898662406,
+            48.113098591430955
+          ],
+          [
+            11.51582144332702,
+            48.11193945382006
+          ],
+          [
+            11.516241738195383,
+            48.111060482126184
+          ],
+          [
+            11.510836860099204,
+            48.10826317272358
+          ]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "who": "Philipp",
         "when": "2025-06-02",
         "text": "Aichacherstr, Kuhfluchtstr, Osterseenstr,<br />Aichacher Platz, Iffeldorferstr, Pilsenseestr,<br />Seehauserstr, Heuwinkel<br />Murnauerstr + Höglwörtherstr auf der Seite zu den oben genannten"
       },
@@ -196,8 +249,7 @@
           ]
         ],
         "type": "LineString"
-      },
-      "id": 0
+      }
     },
     {
       "type": "Feature",
@@ -1576,60 +1628,6 @@
         ],
         "type": "LineString"
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "who": "Philipp",
-        "when": "2025-02-06",
-        "text": "Uttingerstr, Schondorferstr, Holzhausenerstr,<br />Inningerstr, Südparkallee, Breitbrunnerstraße<br />Trautweinstraße, Kederbacherstr, Höllentalstr<br />Cimbernstr von Höllentalstr - Innerkoflerstr"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            11.516316902000455,
-            48.11106799866454
-          ],
-          [
-            11.510775478412116,
-            48.108259529243064
-          ],
-          [
-            11.509256106760436,
-            48.108372930823364
-          ],
-          [
-            11.50896187657711,
-            48.10950643174193
-          ],
-          [
-            11.508667239510473,
-            48.11192044970669
-          ],
-          [
-            11.512705174955148,
-            48.11247620357763
-          ],
-          [
-            11.515630578751304,
-            48.112559180294426
-          ],
-          [
-            11.516220757409876,
-            48.11114453382253
-          ],
-          [
-            11.515787965782405,
-            48.11198750860589
-          ],
-          [
-            11.515662440620133,
-            48.113138214970775
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": 23
     }
   ]
 }
