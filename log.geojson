@@ -6,7 +6,7 @@
       "properties": {
         "who": "Marina u. Sophie",
         "when": "2025-02-16",
-        "what": "Plinganser, Spitzweg u. Pfeuferstr.<br />bis Herzog-Ernst-Pl."
+        "text": "Plinganser, Spitzweg u. Pfeuferstr.<br />bis Herzog-Ernst-Pl."
       },
       "geometry": {
         "coordinates": [
@@ -52,7 +52,8 @@
           ]
         ],
         "type": "LineString"
-      }
+      },
+      "id": 0
     },
     {
       "type": "Feature",
